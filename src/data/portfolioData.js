@@ -1,296 +1,310 @@
 // ============================================================
-// portfolioData.js — Centralized configuration for Md Yusuf's Portfolio
+// portfolioData.js — Centralized configuration for Aadil Saiyed's Portfolio
 // All external links, personal info, and content in one place.
 // Update this file to change any content across the entire site.
 // ============================================================
 
 export const personalInfo = {
-  name: "Md Yusuf",
-  firstName: "Md Yusuf",
-  brandName: "Md Yusuf",
-  title: "Full Stack & Java Developer",
-  location: "Bhopal, India",
-  phone: "+91 99396-08743",
+  name: "Aadil Saiyed",
+  firstName: "Aadil",
+  brandName: "Aadil Saiyed",
+  title: "AI Developer & Software Engineer",
+  location: "Ahmedabad, Gujarat",
+  phone: "+91-9408744578",
   emails: {
-    primary: "mdyusufcse096@iesuniversity.ac.in",
-    secondary: "yusuf.rgpv@gmail.com",
+    primary: "aadil.saiyed0327@gmail.com",
   },
   summary:
-    "Aspiring software engineer and motivated B.Tech Computer Science student with solid skills in Java, Spring Boot, React, and Python. Passionate about building scalable full-stack applications with clean architecture and modern tech stacks.",
-  resumeUrl: "/Md_Yusuf_Resume_2026.pdf",
+    "Computer Science undergraduate with hands-on experience in MERN stack, scalable backend systems, and ML-driven applications. Strong foundation in data structures and system design, with practical work in Large Language Models (LLMs), NLP, Computer Vision, and Generative AI to build intelligent, real-world software products.",
+  resumeUrl: "/Aadil_Saiyed_Resume.pdf",
 };
 
 export const socialLinks = {
-  github: "https://github.com/mdyusuf0",
-  linkedin: "https://linkedin.com/in/mdyusuf0",
-  instagram: "https://instagram.com/heyyusuffff",
+  github: "https://github.com/aadilalisaiyed",
+  linkedin: "https://linkedin.com/in/aadil-saiyed-31a471330",
+  instagram: "https://www.instagram.com/mr_saiyed_27_03/",
+  kaggle: "https://www.kaggle.com/aadilsaiyed",
 };
 
 export const heroContent = {
-  greeting: "Hi, I'm Md Yusuf",
-  titleHighlight: "Full Stack & Java Developer",
+  greeting: "Hi, I'm Aadil Saiyed",
+  titleHighlight: "AI Developer & Software Engineer",
   subtitle:
-    "I build fast, scalable applications using Java, Spring Boot, MERN Stack, and Python.",
+    "I build intelligent applications using MERN Stack, Python, and Generative AI — from full-stack platforms to computer vision systems.",
   ctaPrimary: { text: "View My Work", href: "#projects" },
   ctaSecondary: {
     text: "Contact Me",
-    href: "mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Md Yusuf,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
+    href: "mailto:aadil.saiyed0327@gmail.com?subject=Hiring Inquiry – Portfolio&body=Hello Aadil,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
   },
-  ctaResume: { text: "Download Resume", href: "/Md_Yusuf_Resume_2026.pdf" },
+  ctaResume: { text: "Download Resume", href: "/Aadil_Saiyed_Resume.pdf" },
 };
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Md Yusuf</span>, an aspiring software engineer based in Bhopal, India, dedicated to crafting clean, functional, and highly scalable full-stack applications.`,
-  techStack: ["Java", "Spring Boot", "MERN Stack"],
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Aadil Saiyed</span>, a Computer Science undergraduate based in Ahmedabad, Gujarat, passionate about building intelligent, scalable software using MERN Stack, Python, and Generative AI.`,
+  techStack: ["React", "Python", "AI/ML"],
 };
 
 export const skillsContent = {
   badge: "My Process",
   heading: "Here's how I turn ideas into real-world applications",
   description:
-    "I follow a structured, creative, and highly technical approach to turn ideas into robust full-stack applications.",
+    "I follow a structured, creative, and highly technical approach to turn ideas into intelligent full-stack applications.",
   cards: [
     {
       number: "01",
       title: "Research",
-      text: "I start by understanding goals, user requirements, and technical constraints to lay a rock-solid foundation for the project.",
+      text: "I start by understanding goals, user requirements, and technical constraints — identifying the right AI models and architecture for the problem.",
     },
     {
       number: "02",
       title: "Design",
-      text: "Crafting clean architecture, intuitive interfaces, and pixel-perfect wireframes that guarantee an engaging and accessible user experience.",
+      text: "Crafting clean architecture, intuitive interfaces, and intelligent data pipelines that guarantee an engaging and accessible user experience.",
     },
     {
       number: "03",
       title: "Develop",
-      text: "Building scalable backends and responsive frontends using modern tech stacks and best practices.",
+      text: "Building scalable backends, responsive frontends, and ML pipelines using modern tech stacks like MERN, FastAPI, and PyTorch.",
     },
     {
       number: "04",
       title: "Deploy",
-      text: "Rigorous testing, performance optimization, and seamless deployment to cloud infrastructure, followed by ongoing support.",
+      text: "Rigorous testing, model evaluation, performance optimization, and seamless deployment — followed by ongoing monitoring and support.",
     },
   ],
   endText: "Ready to ship!",
 };
 
-// Brand New Technical Skills Data
+// Technical Skills Data
 export const technicalSkills = {
   categories: [
     {
       title: "Programming Languages",
       skills: [
-        { name: "Java", level: 90 },
+        { name: "Python", level: 90 },
+        { name: "JavaScript", level: 88 },
         { name: "C++", level: 85 },
-        { name: "Python", level: 75 }
-      ]
+        { name: "Java", level: 78 },
+        { name: "C", level: 80 },
+      ],
     },
     {
-      title: "Full Stack",
+      title: "Frontend",
       skills: [
-        { name: "MERN Stack", level: 90 },
-        { name: "HTML", level: 95 },
-        { name: "CSS", level: 90 },
-        { name: "JavaScript", level: 92 }
-      ]
+        { name: "React.js", level: 90 },
+        { name: "HTML5", level: 95 },
+        { name: "CSS3", level: 90 },
+        { name: "Tailwind CSS", level: 88 },
+      ],
     },
     {
       title: "Backend",
       skills: [
-        { name: "Spring Boot", level: 88 },
-        { name: "FastAPI", level: 75 },
-        { name: "REST APIs", level: 90 }
-      ]
+        { name: "Node.js", level: 88 },
+        { name: "Express.js", level: 86 },
+        { name: "REST APIs", level: 90 },
+        { name: "FastAPI", level: 80 },
+        { name: "EJS", level: 75 },
+      ],
     },
     {
       title: "Databases",
       skills: [
-        { name: "MongoDB", level: 88 },
-        { name: "MySQL", level: 85 },
-        { name: "Firebase", level: 80 }
-      ]
+        { name: "PostgreSQL", level: 85 },
+        { name: "MySQL", level: 83 },
+        { name: "MongoDB", level: 85 },
+      ],
     },
     {
-      title: "Tools & Automation",
+      title: "Machine Learning & AI",
+      skills: [
+        { name: "PyTorch", level: 82 },
+        { name: "Scikit-Learn", level: 85 },
+        { name: "OpenCV", level: 80 },
+        { name: "NumPy / Pandas", level: 88 },
+        { name: "Matplotlib / Seaborn", level: 82 },
+      ],
+    },
+    {
+      title: "Generative AI & LLMs",
+      skills: [
+        { name: "Prompt Engineering", level: 85 },
+        { name: "LangChain", level: 80 },
+        { name: "OpenAI API", level: 82 },
+        { name: "HuggingFace", level: 78 },
+        { name: "RAG", level: 78 },
+      ],
+    },
+    {
+      title: "CS Fundamentals",
+      skills: [
+        { name: "Data Structures & Algorithms", level: 88 },
+        { name: "OOP", level: 90 },
+        { name: "DBMS", level: 86 },
+        { name: "Operating Systems", level: 82 },
+      ],
+    },
+    {
+      title: "Tools & Platforms",
       skills: [
         { name: "Git & GitHub", level: 90 },
         { name: "VS Code", level: 95 },
-        { name: "Postman", level: 88 },
-        { name: "n8n", level: 82 },
-        { name: "MongoDB Compass", level: 85 },
-        { name: "Antigravity", level: 80 },
-        { name: "Codex", level: 75 }
-      ]
+        { name: "MATLAB", level: 78 },
+        { name: "Render", level: 80 },
+      ],
     },
-    {
-      title: "Computer Science Concepts",
-      skills: [
-        { name: "Data Structures", level: 88 },
-        { name: "Algorithms", level: 85 },
-        { name: "DBMS", level: 86 },
-        { name: "OOP", level: 90 },
-        { name: "Software Engineering", level: 84 }
-      ]
-    }
-  ]
+  ],
 };
 
-// Brand New Content Creation Data
-export const contentCreation = {
-  badge: "Cinematic Content",
-  heading: "Creative Direction & Cinematic Edits",
-  description: "Beyond coding, I craft visual stories with premium editing, color grading, and creative pacing.",
-  categories: [
-    {
-      title: "Cinematic Reels",
-      description: "Visual stories crafted with cinematic lighting, premium color grading, and high-impact sound design.",
-      stats: "50+ Reels Created",
-      icon: "🎥"
-    },
-    {
-      title: "Travel Videos",
-      description: "Immersive travel vlogs and aesthetic edits capturing cultures, landscapes, and visual rhythms.",
-      stats: "15+ Countries/Cities",
-      icon: "✈️"
-    },
-    {
-      title: "Educational Reels",
-      description: "Fast-paced tech tutorials and educational content designed to simplify coding and software engineering.",
-      stats: "100k+ Views",
-      icon: "🧠"
-    },
-    {
-      title: "My Own Creative Edits",
-      description: "Experimental transitions, 3D overlays, and trendsetting visual effects that push creative bounds.",
-      stats: "Personal Projects",
-      icon: "⚡"
-    }
-  ]
-};
+// Achievements Data (repurposed from Internships)
+export const achievementsList = [
+  {
+    title: "2nd Runner-Up — HackTheSpring'26 HackX",
+    description:
+      "Secured 3rd place at the HackTheSpring'26 HackX Hackathon at Government Engineering College, Gandhinagar — competing against dozens of teams with an innovative AI-powered solution built under time pressure.",
+    venue: "GEC Gandhinagar",
+    year: "2026",
+    badge: "🏆 Hackathon",
+    tags: ["AI/ML", "Full Stack", "Team Competition", "Innovation"],
+  },
+  {
+    title: "Codeversity Program — IIT Gandhinagar",
+    description:
+      "Completed the Codeversity coding and computer science skill-building initiative, organized in association with IIT Gandhinagar and IITGN-X extension arm.",
+    venue: "IIT Gandhinagar",
+    year: "2025",
+    badge: "🎓 Academic",
+    tags: ["Coding", "Computer Science", "IIT Gandhinagar"],
+  },
+  {
+    title: "Orbital Nanosat Exploration Workshop",
+    description:
+      "Participated in a hands-on workshop on nanosatellites and orbital/space exploration technology, hosted at Birla Vishvakarma Mahavidyalaya.",
+    venue: "BVM",
+    year: "2025",
+    badge: "🛰️ Workshop",
+    tags: ["Space Tech", "Nanosatellites", "Engineering"],
+  },
+  {
+    title: "AI Workshop & Hackathon — Techfest IIT Bombay",
+    description:
+      "Participated in an Artificial Intelligence workshop and hackathon organized by HCL GUVI as part of Techfest IIT Bombay — one of Asia's largest science and technology festivals.",
+    venue: "IIT Bombay / HCL GUVI",
+    year: "2024",
+    badge: "🤖 AI",
+    tags: ["Artificial Intelligence", "Hackathon", "IIT Bombay"],
+  },
+];
 
-// Brand New Leadership Data
+// Leadership Data
 export const leadershipList = [
   {
-    title: "IEEE Madhya Pradesh Section (Social Media Team)",
-    description: "Managed and coordinated digital content, driving audience engagement and designing interactive visual campaigns for tech events.",
-    role: "Social Media Coordinator",
-    badge: "Volunteer"
+    title: "Secretary — IEEE Student Branch, RRU",
+    description:
+      "Coordinated core team operations, managed internal communication, and oversaw scheduling for chapter meetings and technical events at Rashtriya Raksha University.",
+    role: "Secretary",
+    badge: "Leadership",
   },
   {
-    title: "Team Coordinator – Go-Kart International Racing 2K25",
-    description: "Led multi-disciplinary teams in project management, budget control, and logistics coordination for a high-profile international racing event.",
-    role: "Team Coordinator",
-    badge: "Leadership"
+    title: "IEEE Gujarat Section — Student Member",
+    description:
+      "Active IEEE student membership under the Gujarat Section, participating in technical events, networking with professionals, and contributing to chapter activities.",
+    role: "Student Member",
+    badge: "Professional",
   },
   {
-    title: "5-Day MOE IDE Bootcamp, Roorkee",
-    description: "Participated in an intensive Innovation, Design, and Entrepreneurship Bootcamp organized by the Ministry of Education at IIT Roorkee.",
+    title: "Skill Development Bootcamp — BVM",
+    description:
+      "Completed an intensive skill-development bootcamp at Birla Vishvakarma Mahavidyalaya, focused on building practical, industry-relevant technical skills.",
     role: "Bootcamp Graduate",
-    badge: "Innovation"
+    badge: "Innovation",
   },
-  {
-    title: "Hosted INFORIA Tech Summit Hackathon",
-    description: "Organized and hosted the flagship hackathon, managing registrations, mentoring participant teams, and coordinating judge evaluations.",
-    role: "Hackathon Organizer",
-    badge: "Co-Curricular"
-  },
-  {
-    title: "Event Coordinator & Anchoring – INFORIA 2K25",
-    description: "Coordinated technical events and served as the main stage anchor, speaking in front of large crowds and managing the summit flow.",
-    role: "Stage Anchor & Coordinator",
-    badge: "Public Speaking"
-  }
 ];
 
-// Brand New Internships Data
-export const internshipsList = [
-  {
-    organization: "Netlink, Bhopal",
-    role: "Data Analytics & BI Tools Intern",
-    duration: "June 2025 - August 2025",
-    skills: ["Data Analytics", "Business Intelligence", "Dashboard Design", "Data Modeling"],
-    tech: ["Lumenore", "MySQL", "Excel", "BI Tools"]
-  },
-  {
-    organization: "Canva",
-    role: "Visual Content Creator & Designer",
-    duration: "May 2024 - June 2024",
-    skills: ["Visual Designing", "Poster Design", "Team Branding", "Asset Creation"],
-    tech: ["Canva Pro", "Figma", "Canva Design Suite"]
-  },
-  {
-    organization: "CollegeTips.in",
-    role: "Web Development Intern",
-    duration: "1 Month (Offline)",
-    skills: ["Frontend Development", "Responsive Layouts", "API Testing", "Web Performance"],
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
-  }
-];
-
-// Brand New Soft Skills Data
+// Soft Skills Data
 export const softSkillsList = [
-  { name: "Leadership", icon: "👑", desc: "Guiding teams, managing tasks, and driving project completion with shared vision." },
-  { name: "Public Speaking", icon: "🎤", desc: "Confident stage presence, anchoring summits, and delivering articulate technical ideas." },
-  { name: "Team Collaboration", icon: "🤝", desc: "Collaborating across fields, building racing carts, and engineering code in sync." },
-  { name: "Communication", icon: "💬", desc: "Clear, concise, and structured interactions in both business and technical contexts." },
-  { name: "Problem Solving", icon: "🧩", desc: "Breaking down complex engineering tasks into clean, logical, and modular pieces." },
-  { name: "Adaptability", icon: "🌟", desc: "Quick to pick up new frameworks like FastAPI, Spring Boot, or automation tools like n8n." },
-  { name: "Creativity", icon: "🎨", desc: "Blending cinematic aesthetics with software structure to build premium experiences." },
-  { name: "Time Management", icon: "⏰", desc: "Balancing B.Tech studies, event hosting, and developing robust software platforms." }
+  {
+    name: "Leadership",
+    icon: "crown",
+    desc: "Managing IEEE chapter operations, coordinating teams, and driving technical event delivery.",
+  },
+  {
+    name: "Problem Solving",
+    icon: "puzzle",
+    desc: "Breaking down complex engineering and AI challenges into clean, modular, and efficient solutions.",
+  },
+  {
+    name: "Team Collaboration",
+    icon: "handshake",
+    desc: "Building hackathon projects under pressure and collaborating across engineering disciplines.",
+  },
+  {
+    name: "Communication",
+    icon: "chat",
+    desc: "Clear, concise, and structured interactions in both technical and team settings.",
+  },
+  {
+    name: "Adaptability",
+    icon: "bolt",
+    desc: "Quick to adopt new frameworks and tools — from LangChain and FastAPI to PyTorch and RAG pipelines.",
+  },
+  {
+    name: "Creativity",
+    icon: "palette",
+    desc: "Blending AI intelligence with clean software architecture to build premium, user-focused experiences.",
+  },
+  {
+    name: "Analytical Thinking",
+    icon: "chart",
+    desc: "Strong foundation in DSA, system design, and ML model evaluation for data-driven decision making.",
+  },
+  {
+    name: "Time Management",
+    icon: "clock",
+    desc: "Balancing B.Tech studies, IEEE responsibilities, hackathon competitions, and building software projects.",
+  },
 ];
 
 export const projects = [
   {
-    id: "foodmesh",
+    id: "placement-portal",
     number: "01",
     badge: "🚀 Flagship Project",
-    title: "FoodMesh",
+    title: "Integrated Placement Management System",
     description:
-      "FoodMesh — An enterprise-grade multi-tenant restaurant management and food ordering SaaS platform inspired by UrbanPiper. It enables restaurants to manage multiple outlets, menus, inventory, customers, staff, and orders through a scalable architecture with secure authentication, role-based access control, and real-time operations. Built with React, Next.js, NestJS, PostgreSQL, Redis, Kafka, Elasticsearch, Docker, Kubernetes, and AWS.",
+      "A multi-role college placement portal with Admin, Coordinator, and Student dashboards — supporting company management, application tracking, and automated deadline enforcement for 200+ student users. Features JWT-based authentication with role-based access control and a RESTful API backend ensuring secure, scalable data flow across all user roles.",
     techTags: [
-      "React",
-      "Next.js",
-      "NestJS",
+      "React.js",
+      "Node.js",
+      "Express.js",
       "PostgreSQL",
-      "Redis",
-      "Kafka",
-      "Elasticsearch",
-      "Docker",
-      "Kubernetes",
-      "AWS",
+      "Tailwind CSS",
+      "JWT",
+      "REST API",
     ],
     links: {
-      github: "https://github.com/ersamirsingh/UrbanPiper",
-      demo: null,
+      github: "#",
+      demo: "https://integrated-placement-management-sys.vercel.app/dashboard",
     },
     isFlagship: true,
   },
   {
-    id: "karigar",
+    id: "sparkone",
     number: "02",
-    badge: null,
-    title: "Karigar",
+    badge: "🤖 AI Project",
+    title: "Sparkone — AI Cashier Theft Detection",
     description:
-      "A platform connecting local skilled workers with customers, featuring real-time search, worker profiles, and booking management with full database integration.",
-    techTags: ["React", "Node.js", "MongoDB", "Express", "REST API"],
+      "A real-time AI-powered theft detection system for restaurant cashier stations. Uses FaceNet512 deep learning model to identify authorized cashier personnel and verify shift schedule compliance. Compares detected face identity against a pre-registered staff database and cross-checks timestamps with allocated shift windows — triggering automated alerts for unauthorized access or timing mismatches.",
+    techTags: [
+      "Python",
+      "Computer Vision",
+      "FaceNet512",
+      "FastAPI",
+      "OpenCV",
+      "Deep Learning",
+    ],
     links: {
-      github: "https://github.com/mdyusuf0/Karigar",
-      frontendDemo: "https://karigar-frontend.onrender.com",
-      backendApi: "https://karigar-zny2.onrender.com",
-    },
-    isFlagship: false,
-  },
-  {
-    id: "sentiment-analysis",
-    number: "03",
-    badge: null,
-    title: "AI-Powered Sentiment Analysis",
-    description:
-      "A full-stack web application that analyzes citizen feedback using Artificial Intelligence to classify sentiments as positive, negative, or neutral. Features a responsive React frontend, a Node.js backend, MongoDB for data storage, and n8n automation for workflow orchestration — enabling real-time insights and efficient feedback management.",
-    techTags: ["React", "Node.js", "MongoDB", "n8n", "AI/ML", "REST API"],
-    links: {
-      github: "#", // Update when available
+      github: "#",
     },
     isFlagship: false,
   },
@@ -299,57 +313,55 @@ export const projects = [
 export const certificates = {
   featured: [
     {
-      name: "Oracle Cloud Infrastructure 2025",
-      issuer: "Oracle",
-      icon: "☁️",
+      name: "MLOps for Generative AI",
+      issuer: "Google Cloud",
+      icon: "cloud",
     },
     {
-      name: "Programming in Java (94%)",
-      issuer: "NPTEL",
-      icon: "☕",
+      name: "Introduction to Generative AI",
+      issuer: "Google Cloud",
+      icon: "robot",
     },
     {
-      name: "C Programming & Assembly Language",
-      issuer: "NPTEL",
-      icon: "⚙️",
+      name: "HackTheSpring — 2nd Runner Up",
+      issuer: "GEC Gandhinagar",
+      icon: "trophy",
     },
     {
-      name: "Technology Job Simulation",
-      issuer: "Deloitte",
-      icon: "💼",
+      name: "Python Programming",
+      issuer: "Kaggle",
+      icon: "code",
     },
     {
-      name: "Career Edge – IT Primer",
-      issuer: "TCS iON",
-      icon: "🎓",
+      name: "Introduction to Deep Learning",
+      issuer: "Infosys Springboard",
+      icon: "brain",
     },
     {
-      name: "Fundamentals of BI & Analytics",
-      issuer: "Lumenore",
-      icon: "📊",
+      name: "MATLAB Certified",
+      issuer: "IEEE Gujarat / MATLAB@UCL",
+      icon: "compass",
     },
   ],
   viewAllUrl:
-    "https://drive.google.com/file/d/1ObdGWtVSx8SsfR4AcbCySSd9LFXcAs9f/view?usp=sharing",
+    "https://www.linkedin.com/in/aadil-saiyed-31a471330/details/certifications/",
 };
 
 export const education = {
   degree: "B.Tech – Computer Science & Engineering",
-  institution: "IES College of Technology (RGPV)",
-  cgpa: "8.35",
-  graduation: "2027",
-  twelfth: "12th Science – 81%",
-  tenth: "10th CBSE – 70%",
+  institution: "Rashtriya Raksha University, Gandhinagar",
+  cgpa: "8.8",
+  graduation: "2028",
 };
 
 export const footerContent = {
   taglines: [
-    "Software Engineering & Web Dev",
-    "Java · Spring Boot · React",
-    "Full Stack Applications",
+    "AI Development & Full Stack Engineering",
+    "Python · React · LLMs · Computer Vision",
+    "Intelligent Software Products",
   ],
-  credential: "B.Tech CSE · CGPA 8.35",
-  copyright: `© ${new Date().getFullYear()} Md Yusuf | Built with React`,
+  credential: "B.Tech CSE · CGPA 8.8",
+  copyright: `© ${new Date().getFullYear()} Aadil Saiyed | Built with React`,
 };
 
 // EmailJS Configuration

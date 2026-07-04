@@ -20,15 +20,13 @@ const Navbar = () => {
 
   const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
-  const hireMeMailto = `mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Md Yusuf,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
-
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isOpen 
           ? 'bg-[#ff2a2a] py-4'
           : isScrolled 
-            ? 'bg-transparent py-4' 
+            ? 'bg-[#0a0a0a]/80 backdrop-blur-md py-4' 
             : 'bg-transparent py-6'
       }`}
     >
@@ -54,16 +52,6 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-        </div>
-
-        {/* Right Side: CTA Button */}
-        <div className="hidden md:block">
-          <a 
-            href={hireMeMailto}
-            className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md"
-          >
-            Hire Me
-          </a>
         </div>
 
         {/* Mobile Hamburger Menu Icon */}
@@ -100,15 +88,6 @@ const Navbar = () => {
               {link}
             </a>
           ))}
-          <div className="pt-4 pb-2">
-             <a 
-               href={hireMeMailto}
-               onClick={() => setIsOpen(false)} 
-               className="inline-block px-6 py-3 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg"
-             >
-               Hire Me
-             </a>
-          </div>
         </div>
       </div>
     </nav>

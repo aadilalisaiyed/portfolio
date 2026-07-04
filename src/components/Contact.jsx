@@ -44,9 +44,10 @@ const Contact = () => {
       emailjsConfig.publicKey !== 'YOUR_EMAILJS_PUBLIC_KEY';
 
     if (!isConfigured) {
-      // EmailJS not configured — fallback to prefilled mailto
-      const mailtoLink = `mailto:${personalInfo.emails.primary}?subject=Portfolio Contact from ${firstName} ${lastName}&body=${encodeURIComponent(`From: ${firstName} ${lastName}\nEmail: ${email}\n\n${message}`)}`;
-      window.open(mailtoLink, '_blank');
+      // EmailJS not configured — fallback to mailto (using location.href for reliability)
+      const subject = encodeURIComponent(`Portfolio Contact from ${firstName} ${lastName}`);
+      const body = encodeURIComponent(`From: ${firstName} ${lastName}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:${personalInfo.emails.primary}?subject=${subject}&body=${body}`;
       setStatus('success');
       formRef.current.reset();
       setTimeout(() => setStatus('idle'), 3000);
@@ -73,25 +74,35 @@ const Contact = () => {
   };
 
   return (
-    <section ref={ref} id="contact" className="bg-[#0a0a0a] w-full min-h-screen relative overflow-hidden flex items-end pt-32 pb-0 md:pb-0 border-t border-gray-900">
-      {/* Huge Background Text */}
-      <motion.div 
-        style={{ y }}
-        className="absolute top-0 left-0 w-full h-full flex flex-col justify-start items-center overflow-hidden pointer-events-none z-0 pt-16 md:pt-12"
-      >
-        <h1 
-          className="text-[25vw] leading-[0.75] font-black text-white uppercase tracking-tighter select-none scale-y-[1.6] origin-top"
-          style={{ fontFamily: "'Impact', 'Arial Black', sans-serif" }}
-        >
-          Contact
-        </h1>
-      </motion.div>
+    <section ref={ref} id="contact" className="bg-[#0a0a0a] w-full min-h-screen relative overflow-hidden flex flex-col pt-24 pb-0 md:pb-0">
+      
+      {/* Wavy divider at top — matching other sections */}
+      <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12 md:h-20 fill-white">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.62,189.5,99.8,242.79,81.82,282.88,63.6,321.39,56.44Z"></path>
+        </svg>
+      </div>
 
-      {/* Form Card Overlay */}
-      <div className="relative z-10 w-full flex justify-end items-end">
+      {/* Header — matching other sections */}
+      <div className="max-w-6xl mx-auto w-full px-6 relative z-20 pt-12 text-center">
+        <div data-aos="fade-up" className="mb-12">
+          <div className="inline-block border border-white/20 rounded-full px-5 py-1.5 text-sm text-white/60 font-bold mb-6 shadow-sm bg-white/5 backdrop-blur-sm">
+            Get In Touch
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4 uppercase">
+            Contact
+          </h2>
+          <p className="text-white/50 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+            Have a project in mind, want to discuss an opportunity, or just say hello? Drop a message below!
+          </p>
+        </div>
+      </div>
+
+      {/* Form Card — Centered & Symmetric */}
+      <div className="relative z-10 w-full flex-1 flex items-end justify-center pt-8">
         <div 
           data-aos="fade-up"
-          className="bg-[#ff2a2a] w-full md:w-[85%] lg:w-[75%] p-8 md:p-16 text-white flex flex-col justify-between"
+          className="bg-[#ff2a2a] w-full max-w-6xl mx-auto p-8 md:p-16 text-white rounded-t-3xl md:rounded-t-[2.5rem]"
         >
           <div className="flex flex-col sm:flex-row justify-between items-start gap-8 mb-12">
             <div className="text-xs font-bold tracking-[0.2em] uppercase opacity-90">

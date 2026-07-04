@@ -8,7 +8,7 @@ const SkillProgress = ({ name, level }) => (
       <span className="text-red-400 text-xs font-bold font-mono">{level}%</span>
     </div>
     <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden border border-white/5">
-      <div 
+      <div
         className="h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full transition-all duration-1000 ease-out"
         style={{ width: `${level}%` }}
       />
@@ -17,7 +17,7 @@ const SkillProgress = ({ name, level }) => (
 );
 
 const SkillCard = ({ category, index }) => (
-  <div 
+  <div
     data-aos="fade-up"
     data-aos-delay={index * 100}
     className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:scale-[1.02] hover:border-red-500/30 hover:shadow-[0_20px_50px_rgba(255,42,42,0.1)] transition-all duration-500"
@@ -41,7 +41,7 @@ const TechnicalSkills = () => {
       <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-red-500/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        
+
         {/* Header */}
         <div data-aos="fade-up" className="mb-16 text-center">
           <div className="inline-block border border-white/20 rounded-full px-5 py-1.5 text-sm text-white/60 font-bold mb-6 shadow-sm bg-white/5 backdrop-blur-sm">

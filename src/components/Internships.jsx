@@ -1,7 +1,7 @@
 import React from 'react';
-import { internshipsList } from '../data/portfolioData';
+import { achievementsList } from '../data/portfolioData';
 
-const InternshipCard = ({ intern, index }) => (
+const AchievementCard = ({ achievement, index }) => (
   <div 
     data-aos="fade-up"
     data-aos-delay={index * 150}
@@ -10,35 +10,24 @@ const InternshipCard = ({ intern, index }) => (
     <div>
       <div className="flex justify-between items-start mb-6">
         <span className="text-white/40 text-xs font-mono font-bold tracking-widest uppercase">
-          {intern.duration}
+          {achievement.venue} · {achievement.year}
         </span>
         <span className="bg-white/10 text-white text-[10px] font-black tracking-widest uppercase py-1 px-3 rounded-full border border-white/15">
-          Internship
+          {achievement.badge}
         </span>
       </div>
-      <h3 className="text-white text-2xl font-black mb-1 tracking-tight">
-        {intern.role}
+      <h3 className="text-white text-xl md:text-2xl font-black mb-3 tracking-tight">
+        {achievement.title}
       </h3>
-      <p className="text-red-200 text-sm font-black tracking-wide mb-6 uppercase">
-        {intern.organization}
+      <p className="text-red-100/80 text-sm md:text-base leading-relaxed mb-6 font-medium">
+        {achievement.description}
       </p>
-
-      {/* Skills gained */}
-      <div className="mb-6">
-        <h4 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-2">Skills Gained:</h4>
-        <ul className="text-white/90 text-sm font-medium space-y-1 pl-4 list-disc">
-          {intern.skills.map((skill, i) => (
-            <li key={i}>{skill}</li>
-          ))}
-        </ul>
-      </div>
     </div>
 
-    {/* Technologies used */}
+    {/* Tags */}
     <div className="pt-4 border-t border-white/10">
-      <h4 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-3">Technologies:</h4>
       <div className="flex flex-wrap gap-2">
-        {intern.tech.map((t) => (
+        {achievement.tags.map((t) => (
           <span 
             key={t}
             className="px-3 py-1 text-xs font-mono font-bold text-white bg-white/10 rounded-full border border-white/10 hover:bg-white/20 transition-all"
@@ -51,7 +40,7 @@ const InternshipCard = ({ intern, index }) => (
   </div>
 );
 
-const Internships = () => {
+const Achievements = () => {
   return (
     <section className="bg-[#ff2a2a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       
@@ -67,17 +56,17 @@ const Internships = () => {
         {/* Header */}
         <div data-aos="fade-up" className="mb-16 md:mb-20 text-center">
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight uppercase">
-            Work Experience
+            Achievements & Hackathons
           </h2>
           <p className="text-red-100 text-base md:text-lg font-semibold max-w-lg mx-auto">
-            Practical internships where I applied engineering principles and built real-world assets.
+            Hackathon wins, workshops, and hands-on experiences that shaped my engineering journey.
           </p>
         </div>
 
-        {/* Internship Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
-          {internshipsList.map((intern, index) => (
-            <InternshipCard key={intern.organization} intern={intern} index={index} />
+        {/* Achievement Cards Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+          {achievementsList.map((achievement, index) => (
+            <AchievementCard key={achievement.title} achievement={achievement} index={index} />
           ))}
         </div>
 
@@ -91,4 +80,4 @@ const Internships = () => {
   );
 };
 
-export default Internships;
+export default Achievements;
