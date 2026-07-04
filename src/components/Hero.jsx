@@ -32,21 +32,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative w-full h-screen overflow-hidden bg-[#FA3100]">
-      {/* Solid red bar to push video below navbar — invisible, same color as bg */}
-      <div className="absolute top-0 left-0 w-full h-20 bg-[#FA3100] z-10 pointer-events-none" />
-
-      {/* Background Video */}
-      <video
-        ref={videoRef}
-        loop
-        muted={isMuted}
-        playsInline
-        className="absolute top-16 left-0 w-full h-[calc(100%-4rem)] object-contain z-0"
-      >
-        <source src={heroVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <section id="home" className="relative w-full bg-[#FA3100] flex flex-col md:block md:h-screen md:overflow-hidden">
+      {/* Solid red bar to push content below navbar — spacing element on mobile, absolute overlay on desktop */}
+      <div className="w-full h-20 bg-[#FA3100] shrink-0 md:absolute md:top-0 md:left-0 md:z-10 md:pointer-events-none" />
 
       {/* Left Floating Social Bar for Large Screens */}
       <div className="hidden lg:flex flex-col gap-6 fixed left-6 top-1/2 -translate-y-1/2 z-50 mix-blend-difference">
@@ -96,11 +84,11 @@ const Hero = () => {
         </a>
       </div>
 
-      {/* Content Container */}
-      <div className="absolute inset-0 z-20 px-6 pb-12 md:pb-[8%] md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end text-left w-full gap-6">
+      {/* Main Content Layout Container */}
+      <div className="w-full max-w-7xl mx-auto flex flex-col px-6 pt-4 pb-12 gap-6 flex-1 justify-start md:absolute md:inset-0 md:z-10 md:px-12 md:pb-[8%] md:pt-24 md:flex-row md:justify-between md:items-end md:gap-8">
         
-        {/* Left Side: Text and Buttons */}
-        <div className="flex flex-col items-start text-left max-w-2xl w-full">
+        {/* Left Side: Text and Buttons (always first in stack) */}
+        <div className="flex flex-col items-start text-left max-w-2xl w-full relative z-20">
           {/* Mobile / Hero inline socials */}
           <div 
             data-aos="fade-up"
@@ -177,11 +165,25 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side: Play Video Button */}
+        {/* Video Element (stacked on mobile, absolute background on desktop) */}
+        <div className="w-full flex justify-center items-center mt-4 md:mt-0 md:absolute md:inset-0 md:z-0 md:w-full md:h-full select-none pointer-events-none">
+          <video
+            ref={videoRef}
+            loop
+            muted={isMuted}
+            playsInline
+            className="w-full md:w-full h-auto max-h-[250px] md:max-h-none md:h-[calc(100%-5rem)] object-contain rounded-2xl md:rounded-none border border-white/10 md:border-none shadow-2xl md:shadow-none pointer-events-auto"
+          >
+            <source src={heroVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        {/* Right Side: Play Video Button (third in stack) */}
         <div 
           data-aos="zoom-in"
           data-aos-delay="600"
-          className="mt-6 md:mt-0 flex flex-row md:flex-col items-center gap-2 md:gap-3 cursor-pointer group self-start md:self-auto shrink-0 pb-2 md:pb-0"
+          className="mt-2 md:mt-0 flex flex-row md:flex-col items-center gap-2 md:gap-3 cursor-pointer group self-start md:self-auto shrink-0 pb-2 md:pb-0 relative z-20"
           onClick={toggleVideo}
         >
           <div className="w-10 h-10 md:w-20 md:h-20 rounded-full border border-white/30 bg-black/20 backdrop-blur-md flex justify-center items-center group-hover:scale-110 group-hover:bg-[#ff2a2a] transition-all duration-500 shadow-[0_0_30px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_40px_rgba(255,42,42,0.6)]">
