@@ -20,8 +20,7 @@
 
 🎥 **Demo Video**
 
-<video src="./demo.mp4" controls width="100%"></video>
-
+[![Watch Demo](https://img.youtube.com/vi/OA1sruGXVe8/maxresdefault.jpg)](https://youtu.be/OA1sruGXVe8)
 ---
 ## 🎨 Design & Aesthetic Highlights
 
