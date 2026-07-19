@@ -14,7 +14,15 @@
 </p>
 
 ---
+## 🚀 Live Demo
 
+🌐 **Hosted Website:** [View Live Website](https://personalportfolio-nu-two.vercel.app/)
+
+🎥 **Demo Video**
+
+<video src="./demo.mp4" controls width="100%"></video>
+
+---
 ## 🎨 Design & Aesthetic Highlights
 
 - **🎥 Dynamic Hero Section**: Cinematic video background with smooth play/pause controls and custom dark top overlay.
